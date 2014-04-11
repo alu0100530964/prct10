@@ -1,0 +1,49 @@
+This is BibTeX, Version 0.99c (TeX Live 2009/Debian)
+The top-level auxiliary file: memte.aux
+The style file: plain.bst
+Database file #1: bib/references.bib
+Warning--empty journal in franpa
+Warning--empty year in franpa
+Warning--empty journal in numero
+You've used 2 entries,
+            2118 wiz_defined-function locations,
+            504 strings with 4095 characters,
+and the built_in function-call counts, 422 in all, are:
+= -- 36
+> -- 14
+< -- 0
++ -- 6
+- -- 4
+* -- 21
+:= -- 83
+add.period$ -- 5
+call.type$ -- 2
+change.case$ -- 8
+chr.to.int$ -- 0
+cite$ -- 5
+duplicate$ -- 20
+empty$ -- 35
+format.name$ -- 4
+if$ -- 79
+int.to.chr$ -- 0
+int.to.str$ -- 2
+missing$ -- 2
+newline$ -- 12
+num.names$ -- 4
+pop$ -- 14
+preamble$ -- 1
+purify$ -- 6
+quote$ -- 0
+skip$ -- 13
+stack$ -- 0
+substring$ -- 10
+swap$ -- 0
+text.length$ -- 0
+text.prefix$ -- 0
+top$ -- 0
+type$ -- 8
+warning$ -- 3
+while$ -- 4
+width$ -- 3
+write$ -- 18
+(There were 3 warnings)

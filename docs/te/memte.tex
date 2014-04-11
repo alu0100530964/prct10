@@ -1,0 +1,155 @@
+\documentclass[spanish,a4paper,11pt,twoside]{article}
+
+%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+\usepackage[dvips]{graphicx}
+\usepackage[dvips]{epsfig}
+\usepackage[latin1]{inputenc}
+\usepackage[spanish]{babel}
+\usepackage{alltt}
+
+%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+% Format
+%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+
+\oddsidemargin 5 mm
+\evensidemargin 5 mm
+\textwidth 15 cm
+\input{amssym.def}
+%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+
+\begin{document}
+
+%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+% First Page 
+%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+
+\pagestyle{empty}
+\thispagestyle{empty}
+
+
+\newcommand{\HRule}{\rule{\linewidth}{1mm}}
+\setlength{\parindent}{0mm}
+\setlength{\parskip}{0mm}
+\vspace*{\stretch{1}}
+
+\begin{center}
+\includegraphics[width=0.2\textwidth]{images/logotipo-secundario-ULL}\\[0.25cm]
+\end{center}
+
+\HRule
+\begin{center}
+        {\Huge El número $\pi$} \\[2.5mm] 
+        {\Large María Baeza López (1 autor)} \\[5mm]
+        {\Large \textit{Grupo ($3$) }} \\[5mm]
+
+
+        {\em Técnicas Experimentales. $1^{er}$ curso. $2^{do}$ semestre} \\[5mm]
+        Lenguajes y Sistemas Informáticos \\[5mm]
+        Facultad de Matemáticas \\[5mm]
+        
+        Universidad de La Laguna \\
+\end{center}
+\HRule
+\vspace*{\stretch{2}}
+\begin{center}
+  La Laguna, \today 
+\end{center}
+
+%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+\begin{abstract}
+El número $\pi$ es posiblemente la constante numérica más estudiada a lo largo de la historia. Su entorno, aunque en apariencia sólo a nivel matemático, ha trascendido
+las fronteras de esta disciplina y es así como ha suscitado el interés de hombres en diversas áreas del conocimiento. La revisión de su desarrollo histórico es, 
+por tanto, una combinación amena de aspectos científicos, anecdóticos y culturales.
+\end{abstract}
+%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+\section{Marco general}
+La historia del número $\pi$ puede dividirse en tres períodos claramente establecidos (veáse la tabla \ref{tabla}), los cuales se diferencian entre sí por aspectos relacionados con el método,
+propósitos inmediatos y las herramientas científicas e intelectuales disponibles.
+
+El primer período cubre el tiempo transcurrido entre los primeros registros de determinaciones empíricas de la relación del perímetro de una circunferencia y 
+su diámetro hasta la invención del cálculo diferencial e integral a mediados del siglo XVII.
+En este intervalo de tiempo se puede hablar de algunas aproximaciones de $\pi$ por parte de los Babilonios, los Egipcios y los Hebreos, pero esencialmente incluye los
+trabajos de los Griegos y algunas reglas empíricas encontradas en antiguos tratados matemáticos chinos e hindúes. A lo largo de este período, pero sobre todo en los
+siglos finales, aparece una gran cantidad de intentos por dar solución por medio de construcciones geométricas al célebre problema de la cuadratura del círculo: 
+cómo construir un cuadrado cuya área sea exactamente igual a la de un círculo hecho con anterioridad, ayudándose sólo de
+regla y compás. Este problema es, por completo equivalente al conocido como de la rectificación del círculo, el cual consiste en construir una línea recta de
+igual longitud al perímetro de una circunferencia. En ambos casos puede verse implícito el valor numérico de $\pi$.
+
+El segundo período se inicia coincidiendo con el descubrimiento de esa herramienta esperada: el cálculo infinitesimal. Su duración se extiende por un lapso
+aproximado de un siglo, y se caracteriza por la aplicación de métodos analíticos poderosos para la determinación de expresiones para el cálculo de $\pi$ que, 
+por lo general, incluían funciones trigonométricas en la forma de series convergentes, no pocas de ellas empíricas y muy ingeniosas, productos infinitos y fracciones
+continuas. 
+
+El tercer período se extiende desde mediados del siglo XVIII hasta finales del siglo XIX, y se caracteriza por la atención dirigida a toda clase de investigaciones
+críticas sobre la verdadera naturaleza del número en sí mismo, considerado independiente de meras representaciones analíticas. En este período se reconoce a
+como número irracional y trascendental, conduciendo por ende a conclusiones definitivas sobre el problema de la cuadratura del círculo. \cite{numero}
+
+\begin{table}[!ht]
+\begin{center}
+\begin{tabular}{|l|c|c|}
+\hline
+Periodos & Comienzo & Final \\ \hline
+Primero & 1573 & 1706 \\ \hline
+Segundo & 1706 & 1776 \\ \hline
+Tercero & 1776 & 1840 \\ \hline
+\end{tabular}
+\end{center}
+\caption{datos}
+\label{tabla}
+\end{table}
+
+%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+\section{Periodos}
+\subsection{1º Período}
+Las primeras trazas de la determinación de $\pi$ son encontradas en diferentes papiros de gran antigüedad, que a manera de catálogos incluían en las modalidades de 
+escritura de las respectivas épocas, grupos de problemas y su correspondiente solución, reflejo del estado de las matemáticas de aquella cultura a la que pertenecen.
+El más conocido de ellos \cite{franpa} es el llamado papiro de Rhind \footnote{En 1858 el egiptólogo escocés A. Henry Rhind visitó Egipto por motivos de salud (padecía tuberculosis)
+y compró en Luxor el papiro que actualmente se conoce como papiro Rhind o de Ahmes, encontrado en las ruinas de un antiguo edificio de Tebas}
+
+El papiro de Rhind, en conjunto con el de Golenischev , llamados ambos en honor de sus primeros propietarios conocidos, constituyen los dos documentos matemáticos más
+antiguos disponibles, y son indicativos de los niveles de la aritmética y de la geometría prácticas conocidas por los egipcios en su época (Neugebauer, 1959).
+El papiro de Rhind, más que un tratado, es una colección de aproximadamente 85 ejercicios matemáticos y ejemplos prácticos que
+exhiben el uso de fracciones, la solución de ecuaciones simples y progresiones, y la medición de áreas y volúmenes. En este último aspecto, el problema 59 se relaciona
+con figuras que tienen que ver con el círculo, así (Newman, 1956).(veáse la figura \ref{imagen})
+
+\begin{figure}[!th]
+\begin{center}
+\includegraphics[width=0.75\textwidth]{images/papiro_rhind.eps}
+\caption{Papiro de Rhind}
+\label{imagen}
+\end{center}
+\end{figure}
+
+Es sin embargo Arquímedes (Siglo III a. C.),considerado por muchos como el principal matemático de la antigüedad, quien en su trabajo "Sobre la medición del círculo"
+hace el primer tratamiento científico correcto del problema al modificar un elemento del método de Bryson: consideró los perímetros de los polígonos y el radio del
+círculo en lugar de las áreas. Comenzando con hexágonos y duplicando cada vez el número de lados, llegó hasta el polígono de 96 lados.
+\subsection{2º Período}
+El establecimiento de los fundamentos del cálculo diferencial e integral por parte de Newton y Leibniz durante la segunda mitad del siglo XVII, y los posteriores
+desarrollos en esta área abren, como se mencionó previamente en el marco general, la segunda parte de esta historia.
+
+La aparición de nuevos métodos que logran expresar a de manera analítica, al desarrollarlo como diferentes series infinitas de términos, hizo que los estudios
+geométricos o numéricos de polígonos se volvieran obsoletos. La nueva técnica había sido ya desarrollada de manera pionera, aunque rudimentaria, por matemáticos
+hindúes varios siglos atrás, pero sus trabajos no recibieron en su época, ni aún posteriormente toda la divulgación necesaria.
+
+El primer trabajo desarrollado en este sentido es el debido al inglés John Wallis a finales del siglo, conocido posteriormente por haber sido el primero en formular
+la moderna teoría aritmética de los límites. Basado en un método para determinar analíticamente el área de un semicírculo.
+\subsection{3º Período}
+El tercer período de esta historia podría resumirse en las respuestas que se obtuvieron a la pregunta: ¿Cuál es el lugar de entre los números?. En efecto, los trabajos
+realizados durante este período se enfocaron principalmente a la investigación de la real naturaleza de $\pi$.
+Debido a la estrecha relación de este número con la constante e , la base de los logaritmos naturales, la investigación de los dos números fue llevada casi de manera 
+simultánea.
+
+El primer paso importante lo logra en 1776 el alemán J.H. Lambert , cuando presenta su
+prueba de que tanto e como $\pi$ son números irracionales, lo que en otras palabras significa que ninguno de los dos puede ser solución de una ecuación de primer grado
+con coeficientes enteros. Esta demostración empezaba a cerrar las puertas de la solución al problema de la cuadratura del círculo o, de que en cierta manera, la 
+aparición de las cifras decimales de fuera un hecho cuantitativamente previsible. Algunos trabajos del siglo XIX mostraron que dicha solución sería posible si
+pudiera expresarse como cualquier tipo de combinación finita de radicales o términos de raíces cuadradas, es decir,si resultara como solución de un grupo de ecuaciones
+de segundo grado. De esta manera el problema geométrico se convertiría en uno puramente algebraico, el cual tendría inmediata solución
+
+%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+\addcontentsline{toc}{chapter}{Bibliografía}
+\bibliographystyle{plain}
+
+\bibliography{bib/references}
+%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+\end{document}
